@@ -53,7 +53,7 @@
             bindings = <
 #ifdef QWERTY_BASE
  &kp ESC    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
- &kp TAB    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
+ &kp LCTRL    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp RET
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT     &kp BKSP
@@ -61,11 +61,11 @@
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &kp RET
 #endif
 #ifdef TBLE_DUAL_2U
-                       &kp LCTRL  &kp LALT      &lt NAV_L SPACE                &lt NUM_L SPACE              &kp RALT    &kp RCTRL
+                       &kp LALT  &kp LALT      &lt NAV_L SPACE                &lt NUM_L SPACE              &kp RALT    &kp RCTRL
 #elif defined(TBLE_MIT)
-                       &kp LCTRL  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
+                       &kp LALT  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
 #else
-                       &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE        &mo NUM_L      &kp RALT    &kp RCTRL
+                       &kp LALT  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE        &mo NUM_L      &kp RALT    &kp RCTRL
 #endif
             >;
         };
