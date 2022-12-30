@@ -19,6 +19,7 @@
 #define NAV_L 1
 #define NUM_L 2
 #define SYM_L 3
+#define ARROW_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -61,7 +62,7 @@
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp FSLH     &kp RET
 #endif
 #ifdef TBLE_DUAL_2U
-                       &kp LALT  &kp LALT      &lt NAV_L SPACE                &lt NUM_L BKSP              &kp RALT    &kp RCTRL
+                       &kp LALT  &kp LALT      &lt NAV_L SPACE                &lt NUM_L BKSP              &tog ARROW_L    &kp RCTRL
 #elif defined(TBLE_MIT)
                        &kp LALT  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
 #else
@@ -85,6 +86,23 @@
 #endif
             >;
         };
+
+        arrow_layer {
+            label = "Arrow";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UP  &trans  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+#ifdef TBLE_DUAL_2U
+                      &trans     &trans              &trans                    &trans       &trans         &trans
+#elif defined(TBLE_MIT)
+                      &trans     &trans      &trans                &trans             &trans      &trans   &trans
+#else
+                      &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans
+#endif
+            >;
+        };
+
 
         num_layer {
             label = "Num";
