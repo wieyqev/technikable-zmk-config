@@ -87,21 +87,7 @@
             >;
         };
 
-        arrow_layer {
-            label = "Arrow";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UP  &trans  &trans  &trans  &trans  
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
-#ifdef TBLE_DUAL_2U
-                      &trans     &trans              &trans                    &trans       &trans         &trans
-#elif defined(TBLE_MIT)
-                      &trans     &trans      &trans                &trans             &trans      &trans   &trans
-#else
-                      &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans
-#endif
-            >;
-        };
+
 
 
         num_layer {
@@ -136,6 +122,21 @@
             >;
         };
 
+        arrow_layer {
+            label = "Arrow";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp up  &trans  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp left  &kp down  &kp right  &trans  &trans  
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  
+#ifdef TBLE_DUAL_2U
+                      &trans     &trans              &trans                    &trans       &trans         &trans
+#elif defined(TBLE_MIT)
+                      &trans     &trans      &trans                &trans             &trans      &trans   &trans
+#else
+                      &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans
+#endif
+            >;
+        };
     };
 };
 
