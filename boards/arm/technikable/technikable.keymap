@@ -69,8 +69,8 @@
             bindings = <
 #ifdef QWERTY_BASE
  &kp ESC   &kp Q   &kp W   &kp E   &kp R    &kp T    &kp Y   &kp U    &kp I       &kp O     &kp P      &kp BKSP
- &kp LCTRL &bhm LCTRL A    &kp S   &kp D   &kp F    &kp G    &kp H   &kp J    &kp K       &kp L     &kp SEMI   &kp QUOT
- &kp LSHFT &kp Z   &kp X   &kp C   &kp V    &kp B    &kp N   &kp M    &kp COMMA   &kp DOT   &kp FSLH   &mt RSHIFT RET
+ &kp LCTRL &bhm LCTRL  A   &kp S   &kp D   &kp F    &kp G    &kp H   &kp J    &kp K       &kp L     &bhm RCTRL SEMI   &kp QUOT
+ &kp LSHFT &bhm LSHIFT Z   &kp X   &kp C   &kp V    &kp B    &kp N   &kp M    &kp COMMA   &kp DOT   &bhm RSHIFT FSLH   &kp FSLH
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT     &kp BKSP
  &kp TAB    &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O        &kp QUOT
