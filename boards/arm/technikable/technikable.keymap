@@ -159,7 +159,7 @@ bt_layer {
             bindings = <
 &bt BT_CLR  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp UP  &trans  &trans &bootloader  
 &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans &trans &trans &trans &trans
-&trans  &bt BT(0)  &bt BT(1)  &bt BT(2)   &bt BT(3)   &bt BT(4)   &trans  &trans  &trans  &trans  &trans  &trans  
+&trans  &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 2   &bt BT_SEL 4   &trans  &trans  &trans  &trans  &trans  &trans  
 #ifdef TBLE_DUAL_2U
                       &trans     &trans              &trans                    &trans       &trans         &trans
 #elif defined(TBLE_MIT)
