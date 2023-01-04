@@ -90,7 +90,7 @@
             label = "Nav";
             bindings = <
 &bt BT_CLR &kp LS(N1)   &kp LS(N2)  &kp LS(N3)   &kp LS(N4)   &kp LS(N5)   &kp LS(N6)   &kp LS(N7)   &kp LS(N8)   &kp LS(N9)     &kp LS(N0)    &kp DEL
-&trans     &kp F1     &kp F2     &kp F3      &kp F4      &kp F5       &kp F6     &kp F7     &kp F8      &kp F9     &kp F10    &trans 
+&TAB     &kp F1     &kp F2     &kp F3      &kp F4      &kp F5       &kp F6     &kp F7     &kp F8      &kp F9     &kp F10    &trans 
 &trans     &trans     &trans     &trans      &trans      &trans       &trans     &kp HOME   &kp PG_DN   &kp PG_UP  &kp END    &trans
 #ifdef TBLE_DUAL_2U
                       &trans     &trans              &trans                    &trans       &trans         &trans
