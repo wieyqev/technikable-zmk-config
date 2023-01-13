@@ -84,7 +84,7 @@
 #elif defined(TBLE_MIT)
                        &kp LALT  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
 #else
-                       &kp LALT  &kp LALT    &lt NAV_L SPACE    &lt NAV_L SPACE     &lt NUM_L BKSP  &lt NUM_L ENT    &mo ARROW_L    &lt BT_L LGUI
+                       &kp LALT  &kp LALT    &lt NAV_L SPACE    &lt NAV_L SPACE     &lt NUM_L BKSP  &lt NUM_L RET    &mo ARROW_L    &lt BT_L LGUI
 #endif
             >;
         };
