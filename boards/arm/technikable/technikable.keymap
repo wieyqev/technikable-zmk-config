@@ -93,14 +93,14 @@
             label = "Nav";
             bindings = <
 // --------------------------------------------------------------------------------------
-//   | ESC  |  F1 |  F2 |  F3 |  F4 |     | {  | }  |      |     |     |     |      | 
-//   | CTRL |  F5 |  F6 |  F7 |  F8 |     | [  | ]  |      |     |     |     |      |
-//   |LSHFT |  F9 | F10 | F11 | F12 |     |    |    |      |     |     |     |      |
-//                |     |     |     |     |    |    |      |     |     |
+//   | ESC  |  F1 |  F2 |  F3 |  F4 |   |    ||  { |  }   |     |     |     |      | 
+//   | CTRL |  F5 |  F6 |  F7 |  F8 |   |    ||  [ |  ]   |     |     |     |      |
+//   |LSHFT |  F9 | F10 | F11 | F12 |   |    ||    |      |     |     |     |      |
+//                |     |     |     |   |    ||    |      |     |     |
 // --------------------------------------------------------------------------------------
-&trans   &kp F1 &kp F2  &kp F3  &kp F4  &kp LBRC  &kp RBRC  &trans &trans &trans &trans &trans 
-&kp TAB  &kp F5 &kp F6  &kp F7  &kp F8  &kp LBKT  &kp RBKT  &trans &trans &trans &trans &trans 
-&trans   &kp F9 &kp F10 &kp F11 &kp F12 &trans    &trans    &trans &trans &trans &trans &trans 
+&trans   &kp F1 &kp F2  &kp F3  &kp F4  &trans &trans  &kp LBRC  &kp RBRC  &trans &trans &trans 
+&kp TAB  &kp F5 &kp F6  &kp F7  &kp F8  &trans &trans  &kp LBKT  &kp RBKT  &trans &trans &trans 
+&trans   &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans  &trans    &trans    &trans &trans &trans 
 #ifdef TBLE_DUAL_2U
                       &trans     &trans              &trans                    &trans       &trans         &trans
 #elif defined(TBLE_MIT)
@@ -117,11 +117,12 @@
             bindings = <
 // --------------------------------------------------------------------------------------
 //   |    |  !  |  @  |  #  |  $  |  %  |    | ^  |  &   |  *  |  (  |  )  |  DEL | 
-//   |    |  1  |  2  |  3  |  4  |  5  |    | 6  |  7   |  8  |  9  |  0  |      |
-//   |    |     |     |     |     |     |    | -  |  =   |  _  |  +   |    |      |
+//   |    |  1  |  2  |  3  |  4  |  5  |    | 6  |  7   |  8  |  9  |  0  |  _   |
+//   |    |     |     |     |     |     |    | -  |  =   |  +  |      |    |      |
+// --------------------------------------------------------------------------------------
 &trans   &kp LS(N1)   &kp LS(N2) &kp LS(N3) &kp LS(N4)  &kp LS(N5) &kp LS(N6) &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0) &kp DEL        
-&trans   &kp N1       &kp N2     &kp N3     &kp N4      &kp N5     &kp N6     &kp N7      &kp N8      &kp N9      &kp N0     &trans
-&trans   &trans       &trans     &trans     &trans      &trans     &kp MINUS  &kp EQUAL   &kp UNDER   &kp PLUS    &trans     &trans 
+&trans   &kp N1       &kp N2     &kp N3     &kp N4      &kp N5     &kp N6     &kp N7      &kp N8      &kp N9      &kp N0     &kp UNDER
+&trans   &trans       &trans     &trans     &trans      &trans     &kp MINUS  &kp EQUAL   &kp PLUS    &trans     &trans      &trans 
 #ifdef TBLE_DUAL_2U
                      &trans     &kp N0              &trans                 &trans            &trans         &trans
 #elif defined(TBLE_MIT)
