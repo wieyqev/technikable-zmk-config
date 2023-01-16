@@ -80,11 +80,11 @@
 
  
 #ifdef TBLE_DUAL_2U
-                       &kp LALT  &kp LALT      &lt NAV_L SPACE                &lt NUM_L BKSP              &mo ARROW_L    &lt BT_L LGUI
+    &kp LALT  &kp LALT      &lt NAV_L SPACE                &lt NUM_L BKSP              &mo ARROW_L    &lt BT_L LGUI
 #elif defined(TBLE_MIT)
-                       &kp LALT  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
+    &kp LALT  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
 #else
-                       &kp LALT  &kp LALT    &lt NAV_L SPACE    &lt NAV_L SPACE     &lt NUM_L BKSP  &lt ARROW_L RET    &mo ARROW_L    &lt BT_L LGUI
+    &kp LALT  &kp LALT    &lt NAV_L SPACE    &bhm LSHIFT SPACE     &lt NUM_L BKSP  &lt ARROW_L RET    &mo ARROW_L    &lt BT_L LGUI
 #endif
             >;
         };
