@@ -52,6 +52,7 @@
                        &ortho_transform;
 #endif
     };
+    
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
