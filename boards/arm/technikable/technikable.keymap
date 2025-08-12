@@ -189,17 +189,17 @@ Plover_L {
             bindings = <
 // &kp LCTRL &bhm LCTRL  A
 // --------------------------------------------------------------------------------------
-//   | ESC  |  Q  |  W  |  E  |  R  |  T  |    |  Y  |  U   |  I  |  O  |  P  |  \   | 
+//   | ESC  |  Q  |  W  |  E  |  R  |  T  |    |  Y  |  U   |  I  |  O  |  P  |   [  | 
 //   | CTRL |  A  |  S  |  D  |  F  |  G  |    |  H  |  J   |  K  |  L  |  ;  |  '   |
 //   |LSHFT |  Z  |  X  |  C  |  V  |  B  |    |  N  |  M   |  ,  |  .  |  /  |  `   |
-//                | ALT | SPC |  A  |  O  |    |  E  |  U   | RSE | TOG(6) |
+//                | ALT | SPC |  C  |  V  |    |  N  |  M   | RSE | TOG(6) |
 // --------------------------------------------------------------------------------------
- &kp ESC   &kp Q   &kp W   &kp E   &kp R    &kp T    &kp Y   &kp U    &kp I       &kp O     &kp P      &kp BSLH
+ &kp ESC   &kp Q   &kp W   &kp E   &kp R    &kp T    &kp Y   &kp U    &kp I       &kp O     &kp P      &kp LBKT
  &kp LCTRL &kp A   &kp S   &kp D   &kp F    &kp G    &kp H   &kp J    &kp K       &kp L     &kp SEMI   &kp QUOT
  &kp LSHFT &mt LSHIFT Z   &kp X   &kp C   &kp V    &kp B    &kp N   &kp M    &kp COMMA   &kp DOT   &mt RSHIFT FSLH   &mt RSHIFT GRAVE
  
 
- &kp LALT  &kp LALT    &kp A    &kp O    &kp E  &kp U    &mo ARROW_L    &lt BT_L LGUI
+ &kp LALT  &kp LALT    &kp C    &kp V    &kp N  &kp M    &mo ARROW_L    &lt BT_L LGUI
 
             >;
         };
