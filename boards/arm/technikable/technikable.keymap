@@ -199,7 +199,7 @@ Plover_L {
  &kp LSHFT &mt LSHIFT Z   &kp X   &kp C   &kp V    &kp B    &kp N   &kp M    &kp COMMA   &kp DOT   &mt RSHIFT FSLH   &mt RSHIFT GRAVE
  
 
- &kp LALT  &kp LALT    &kp C    &kp V    &kp N  &kp M    &to 1    &lt ARROW_L LGUI
+ &kp LALT  &kp LALT    &kp C    &kp V    &kp N  &kp M     &kp DEL      &to 1  
 
             >;
         };
