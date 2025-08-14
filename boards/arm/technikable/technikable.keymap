@@ -191,15 +191,15 @@ Plover_L {
 // --------------------------------------------------------------------------------------
 //   | ESC  |  Q  |  W  |  E  |  R  |  T  |    |  Y  |  U   |  I  |  O  |  P  |   [  | 
 //   | CTRL |  A  |  S  |  D  |  F  |  G  |    |  H  |  J   |  K  |  L  |  ;  |  '   |
-//   |LSHFT |  Z  |  X  |  C  |  V  |  B  |    |  N  |  M   |  ,  |  .  |  /  |  `   |
-//                | ALT | SPC |  C  |  V  |    |  N  |  M   | RSE | TO(1) |
+//   |LSHFT |  Z  |  X  |  C  |  V  |  B  |    | home| left | up  | down|right| end  |
+//                | ALT | DEL |  C  |  V  |    |  N  |  M   | BKSP | TO(0) |
 // --------------------------------------------------------------------------------------
  &kp ESC   &kp Q   &kp W   &kp E   &kp R    &kp T    &kp Y   &kp U    &kp I       &kp O     &kp P      &kp LBKT
  &kp LCTRL &kp A   &kp S   &kp D   &kp F    &kp G    &kp H   &kp J    &kp K       &kp L     &kp SEMI   &kp QUOT
- &kp LSHFT &mt LSHIFT Z   &kp X   &kp C   &kp V    &kp B    &kp N   &kp M    &kp COMMA   &kp DOT   &mt RSHIFT FSLH   &mt RSHIFT GRAVE
+ &kp LSHFT &mt LSHIFT Z   &kp X   &kp C   &kp V    &kp B    &kp HOME   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp END
  
 
- &kp LALT  &kp LALT    &kp C    &kp V    &kp N  &kp M     &kp DEL      &to 1  
+ &kp LALT  &kp DEL    &kp C    &kp V    &kp N  &kp M     &kp BKSP      &to  0  
 
             >;
         };
